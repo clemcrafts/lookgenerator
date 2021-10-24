@@ -14,40 +14,35 @@ export FLASK_APP=app
 ## Launch the service
 
 ```
-flask run
-```
-
-
-## Launch a live scenario
-
-```
-cd generator
+cd outfitgenerator
 behave
 ```
 
-will trigger a scenario like:
+
+## Example of scenario
+
 
 ```
-Scenario: Users reward the "hipster" outfit the most with heavy dominance on specific items
+Scenario: Users reward the "hipster" and "formal" outfits the most with 3 specific items prefered
 
  Given the outfit generator is live on the website
-
- When users buy the "hipster" outfit 250 times with top 60536077, trousers 60519768 and shoes 60478094
- And users buy the "formal" outfit 50 times with top 60476826, trousers 22531116 and shoes 60168873
+ When users reward the "hipster" outfit 250 times with top 60536077, trousers 60519768 and shoes 60478094
+ And users reward the "formal" outfit 50 times with top 60476826, trousers 22531116 and shoes 60168873
  Then we generate a HTML scenario_formal_1 file with a new outfit
 ```
 
-It generates a HTML with exploitation/exploration colour code for both outfit (title) and articles (borders).
-Red is for exploitation, blue exploration.
+It generates a HTML with exploitation(red)/exploration(blue) colour code
 
-Often, the scenario above will give exploitation cases with a bit of exploration:
+
+### Common result: a hybrid exploration(products)/exploitation(outfit)
+
 
 ![alt tag](https://i.ibb.co/sPQfSDT/Screenshot-2021-10-24-at-01-09-33.png)
 
-Occasionally, we get a full exploitation case:
+### Occasional result: a full exploitation for outfit and products
 
 ![alt tag](https://i.ibb.co/8rKzMJw/Screenshot-2021-10-24-at-01-36-20.png)
 
-Less often, a full exploration case:
+### Rare result: a full exploitation for both outfit and products
 
 ![alt tag](https://i.ibb.co/Y8krSMM/Screenshot-2021-10-24-at-01-26-11.png)

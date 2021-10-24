@@ -3,7 +3,7 @@ from flask import Flask
 from flask import request
 
 app = Flask(__name__)
-
+generator = Generator()
 
 @app.route('/generate', methods=['POST'])
 def generate():
@@ -14,4 +14,4 @@ def generate():
 		             {"look": "cosy", "category": "trousers","articleId": "4"},
 		             {"look": "cosy", "category": "tops", "articleId": "7"}]}
     """
-    return Generator().generate(request.json)
+    return generator.generate(request.json)

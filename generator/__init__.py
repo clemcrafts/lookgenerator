@@ -2,7 +2,7 @@ import os
 
 BETA_SHAPE_PARAMETER_A = 2.0
 BETA_SHAPE_PARAMETER_B = 2.0
-REWARD = 0.7
+REWARD = 1
 
 COLD_START_LOOKS = {
             "cosy": {"shoes": [

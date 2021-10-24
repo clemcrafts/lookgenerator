@@ -146,7 +146,7 @@ class Generator:
 
     def _generate_outfit(self):
         """
-        Generate top outfit by drawing an arm with top article by category.
+        Generate top outfit and top articles within it.
         """
         looks_profiles = []
         look = self._thompson_sample_outfits(looks_profiles)

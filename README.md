@@ -8,16 +8,16 @@ A non-deterministic Baysian-based  MAB outfit generator for clothes.
 virutalenv env -p python3.8
 source env/bin/activate
 pip install -r requirements.txt 
-export FLASK_APP=app
 ```
 
 ## Launch the service
 
 ```
+export FLASK_APP=app
+fask run
 cd outfitgenerator
 behave
 ```
-
 
 ## Example of scenario
 

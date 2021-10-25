@@ -43,6 +43,6 @@ It generates a HTML with exploitation(red)/exploration(blue) colour code
 
 ![alt tag](https://i.ibb.co/8rKzMJw/Screenshot-2021-10-24-at-01-36-20.png)
 
-### Rare result: a full exploitation for both outfit and products
+### Rare result: a full exploration for both outfit and products
 
 ![alt tag](https://i.ibb.co/Y8krSMM/Screenshot-2021-10-24-at-01-26-11.png)

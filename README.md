@@ -26,8 +26,8 @@ behave
 Scenario: Users reward the "hipster" and "formal" outfits the most with 3 specific items prefered
 
  Given the outfit generator is live on the website
- When users reward the "hipster" outfit 250 times with top 60536077, trousers 60519768 and shoes 60478094
- And users reward the "formal" outfit 50 times with top 60476826, trousers 22531116 and shoes 60168873
+ When users reward the "hipster" outfit 3 times with top 60536077, trousers 60519768 and shoes 60478094
+ And users reward the "formal" outfit 2 times with top 60476826, trousers 22531116 and shoes 60168873
  Then we generate a HTML scenario_formal_1 file with a new outfit
 ```
 

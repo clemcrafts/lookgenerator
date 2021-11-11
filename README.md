@@ -1,5 +1,5 @@
 # Outfit Generator
-A non-deterministic Baysian-based  MAB outfit generator for clothes.
+A Bayesian-based MAB outfit generator for clothes.
 
 
 ## Install the requirements
@@ -45,4 +45,4 @@ It generates a HTML with exploitation(red)/exploration(blue) colour code
 
 ### Rare result: a full exploration for both outfit and products
 
-![alt tag](https://i.ibb.co/Y8krSMM/Screenshot-2021-10-24-at-01-26-11.png)
+![alt tag](https://i.ibb.co/3MnXw0R/Screenshot-2021-11-11-at-16-18-20.png)

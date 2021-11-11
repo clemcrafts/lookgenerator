@@ -15,6 +15,11 @@ pip install -r requirements.txt
 ```
 export FLASK_APP=app
 fask run
+```
+
+## Launch automated scenarios
+
+```
 cd outfitgenerator
 behave
 ```
